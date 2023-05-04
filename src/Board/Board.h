@@ -15,10 +15,14 @@ private:
     short width;
     short emptyX;
     short emptyY;
-    Cell cells[MAX_HEIGHT][MAX_WIDTH];
+    Cell cells[MAX_WIDTH][MAX_HEIGHT];
 public:
-    Board(int x, int y);
+    Board(short x, short y);
     void display();
+
+    bool moveEmptyCell(short xDiff, short yDiff);
+
+    bool isSolved();
 };
 
 

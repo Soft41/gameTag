@@ -5,7 +5,13 @@ using namespace std;
 
 #include "Cell.h"
 
-Cell::Cell(short setValue, short xPosition, short yPosition) {
+Cell::Cell() {
+    value = 0;
+    x = 0;
+    y = 0;
+}
+
+Cell::Cell(short xPosition, short yPosition,short setValue) {
     value = setValue;
     x = xPosition;
     y = yPosition;

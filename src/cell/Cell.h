@@ -12,7 +12,8 @@ private:
     short x;
     short y;
 public:
-    Cell(short setValue, short xPosition, short yPosition);
+    Cell(short xPosition, short yPosition, short setValue);
+    Cell();
     short getValue();
     short getPositionX();
     short getPositionY();
