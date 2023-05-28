@@ -4,12 +4,12 @@
 using namespace std;
 
 int main() {
-    Board board(3,3);
+    Board board(3,7);
     board.display();
 
     char input;
 
-    cout << "Enter the side of the movement (left/right/up/down) \n";
+    cout << "Enter the side of the movement (w/s/a/d) \n";
 
     while(!board.isSolved()) {
         cin >> input;
@@ -27,7 +27,7 @@ int main() {
                 board.moveEmptyCell(0, 1);
                 break;
             default:
-                cout << "Enter the side of the movement (left/right/up/down) \n";
+                cout << "Enter the side of the movement (w/s/a/d) \n";
                 break;
         }
         board.display();

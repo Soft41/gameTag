@@ -29,6 +29,14 @@ short Cell::getPositionY() {
     return y;
 }
 
+void Cell::setPositionY(short yPosition) {
+    y = yPosition;
+};
+
+void Cell::setPositionX(short xPosition) {
+    x = xPosition;
+}
+
 void Cell::setValue(short setValue) {
     value = setValue;
 }

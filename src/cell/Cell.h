@@ -17,6 +17,8 @@ public:
     short getValue();
     short getPositionX();
     short getPositionY();
+    void setPositionY(short yPosition);
+    void setPositionX(short xPosition);
     void setValue(short setValue);
 };
 
